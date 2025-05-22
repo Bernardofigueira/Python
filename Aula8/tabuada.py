@@ -1,10 +1,12 @@
 from tabuadaPoo import Tabuada
+
+
 while True:
     print(20*"#")
     numeroUm = input("Digite um número:")
     print(20*"#")
     print("")
-    if numeroUm.replace('.', '', 1).isdigit():
+    if numeroUm.strip().replace('.', '', 1).isdigit():
         numero = float(numeroUm)
         break
     else:
@@ -12,9 +14,7 @@ while True:
         print("Digite um número válido!")
         print(20*"#")
     print("")   
-        
 tabuada_um = Tabuada(numero)
-
 print(20*"-")
 print("Tabuada da soma")
 print(20*"-")
